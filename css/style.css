@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+body {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  background: #DFE8E3;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.famousauthor img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.box h2 {
+  font-size: 2.0em;
+  font-style: oblique;
+  margin: 30px;
+}
+
+.box h3 {
+  font-size: 1.6em;
+  margin-bottom: 60px;
+}
+
+button {
+  display: inline-block;
+  color: #666;
+  background-color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-width: 3px;
+}
+
+button:hover {
+  background-color: #e3e3e3;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  background-color: #CCC;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+a.s3d {
+  clear: both;
+  opacity: .8;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+  height: 40px;
+  margin: 0 0 10px;
+  padding: 0 10px 11px;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
+  width: 125px;
+  transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-left 0.1s ease-in-out, transform .3s ease-out;
+}
+
+a.s3d:hover {
+  opacity: 1;
+  width: 160px;
+  margin-left: -5px;
+}
+
+a.s3d:active {
+  transform: translateX(20px);
+}
+
+a.tweet {
+  background: #65acc8;
+  border-top: 1px solid #a1cdde;
+  color: rgba(25, 45, 55, 0.9);
+}
+
+a.tweet:active {
+  background: #4586ae;
+}
+
+@media (max-width: 768px) {
+  
+  header h1 {
+    font-size: 45px;
+  }
+  .box h2 {
+    font-size: 30px;
+  }
+  .box h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  main header h1 {
+    font-size: 30px;
+  }
+  main .box h2 {
+    font-size: 20px;
+  }
+  main .box h3 {
+    font-size: 16px;
+  }
+  main .trigger {
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
