@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Clicker+Script');
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
+body {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  background: url(http://www.oldskooldepartment.com/attachments/stuttgart-jpg.204/) no-repeat center center fixed;
+  background-size: cover;
+  
+}
+
 * {
   box-sizing: border-box;
 }
