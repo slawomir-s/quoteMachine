@@ -1,37 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
-
-body {
-  font-family: 'Indie Flower', cursive;
-  text-align: center;
-  background: #DFE8E3;
-  margin: 0 auto;
-  padding: 15px;
-}
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 * {
   box-sizing: border-box;
 }
 
-main {
+section {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-header h1 {
-  margin-top: 50px;
-  font-size: 60px;
+section h1 {
+  font-family: 'Clicker Script', cursive;
+  margin-top: 90px;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px grey;
 }
 
-.famousauthor img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+.box {
+  margin-top: 80px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px black;
+  text-shadow: 5px 5px 5px black;
+  color: #fff;
 }
 
 .box h2 {
   font-size: 2.0em;
   font-style: oblique;
   margin: 30px;
+  line-height: 1.5;
 }
 
 .box h3 {
@@ -40,33 +43,34 @@ header h1 {
 }
 
 button {
+  margin-top: 50px;
   display: inline-block;
-  color: #666;
-  background-color: #eee;
+  color: #fff;
+  background-color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
   padding: 10px 30px;
   border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom-width: 3px;
+  font-weight: bold;
+  font-family: 'EB Garamond', serif;
 }
 
 button:hover {
   background-color: #e3e3e3;
   border-color: rgba(0, 0, 0, 0.5);
+  color: #000;
 }
 
 button:active {
   background-color: #CCC;
   border-color: rgba(0, 0, 0, 0.9);
+  
 }
 
 a.s3d {
-  clear: both;
-  opacity: .8;
   border-radius: 3px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
@@ -78,13 +82,10 @@ a.s3d {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
   width: 125px;
-  transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-left 0.1s ease-in-out, transform .3s ease-out;
 }
 
 a.s3d:hover {
-  opacity: 1;
   width: 160px;
-  margin-left: -5px;
 }
 
 a.s3d:active {
@@ -103,12 +104,19 @@ a.tweet:active {
 
 @media (max-width: 768px) {
   
-  header h1 {
+  section h1 {
     font-size: 45px;
   }
+  
+  .box {
+    margin-left: 50px;
+    margin-right: 50px;
+  } 
+  
   .box h2 {
     font-size: 30px;
   }
+  
   .box h3 {
     font-size: 28px;
   }
@@ -116,20 +124,26 @@ a.tweet:active {
 
 @media (max-width: 480px) {
   
-  main header h1 {
-    font-size: 30px;
+  section h1 {
+    font-size: 40px;
   }
-  main .box h2 {
+  
+  .box {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .box h2 {
+    font-size: 25px;
+  }
+  
+  .box h3 {
     font-size: 20px;
   }
-  main .box h3 {
-    font-size: 16px;
-  }
-  main .trigger {
+  
+  .trigger {
     display: block;
     width: 50%;
     margin: 15px auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

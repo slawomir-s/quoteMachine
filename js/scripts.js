@@ -17,8 +17,8 @@ $(function () {
         }
      
             var data = input[0],
-            quoteText = $(data.content).text().trim(),
-            quoteAuthor = data.title;
+                quoteText = $(data.content).text().trim(),
+                quoteAuthor = data.title;
             if (!quoteAuthor.length) {
                 quoteAuthor = "Unknown author";
             }
